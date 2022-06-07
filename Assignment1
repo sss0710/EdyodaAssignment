@@ -1,0 +1,3 @@
+# EdyodaAssignment
+
+Prefering DaemonSet over ReplicaSet will be when we need to maintain one copy of pod in every node, for eg, A monitoring pod or log maintaining pod.
