@@ -1,0 +1,15 @@
+Strategy 
+
+The most easy method will be to use rolling update.
+
+We can update the update the yaml file and add the following code.
+
+minReadySeconds: 10
+strategy:
+rollingUpdate:
+maxSurge: 1
+maxUnavailable: 1
+type: RollingUpdate
+
+After making the edit, we have to run the following command.
+kubectl set image deployment <image_name>
